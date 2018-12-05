@@ -3,7 +3,7 @@
 ## Common Kotlin Editor
 
 ## Why Kotlin
-### Statically Types
+### 1. Statically Types
 Kotlin is a Statically typed programming language. This means that the type of every variable and expression is known at compile time.
 
 The advantage with static typing is that the compiler can validate the methods calls and property access on the objects at compile time itself and prevent lots of trivial bugs that would otherwise crop up at runtime.
