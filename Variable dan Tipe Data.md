@@ -91,3 +91,39 @@ var myCountry = """
   yang terletak di antara benua asia dan australia
 """
 ```
+
+## Arrays
+Array pada Kotlin merepresentasikan Array class, untuk membuat Array dalam Kotlin bisa menggunakan array() atau arrayOff();
+```kotlin
+var countries = arrayOf("jakarta","lampung", "aceh", "kalimantan");
+```
+
+### membuat Arrays menggunakan fungsi libarary arrayOf
+berikut ini adalah contoh membuat array pada kotlin menggunakan arrayOf
+```kotlin
+var countries = arrayOf("jakarta timur", "jakarta barat", "jakarta selatan", "jakarta timur");
+var animals = arrayOf("Cat", "Dog", "Lion", "Tiger")
+print(Arrays.toString(countries))
+```
+
+### menspesifikan dengan tipe array tertentu
+```kotlin
+var mixedArray = arrayOf(1, true, 3, "Hello", 'A')
+```
+
+### Akses Nilai dengan index Array
+```kotlin
+val myDoubleArray = arrayOf(4.0, 6.9, 1.7, 12.3, 5.4)
+val firstElement = myDoubleArray[0]
+val lastElement = myDoubleArray[myDoubleArray.size - 1]
+```
+
+### Primitive Array
+Seperti yang kita pelajari sebelumnya, segala sesuatu di Kotlin adalah sebuah objek. Tetapi untuk meningkatkan kinerja, ini mewakili beberapa tipe dasar seperti number, karakter dan boolean sebagai tipe primitif pada saat runtime.
+
+Kotlin menyediakan cara untuk membuat array tipe primitif juga. Ini berisi kelas khusus untuk mewakili berbagai jenis primitif. Kelas-kelas tersebut adalah IntArray, DoubleArray, CharArray, dan lainnya, selain itu juga bisa membuat berbagai tipe primitif menggunakan fungsi pustaka yang sesuai, seperti intArrayOf (), doubleArrayOf (), charArrayOf (), dan lainnya.
+
+```java
+val myCharArray = charArrayOf('K', 'O', 'T')  // CharArray (corresponds to Java 'char[]')
+val myIntArray = intArrayOf(1, 3, 5, 7)		// IntArray (corresponds to Java 'int[]')
+```
