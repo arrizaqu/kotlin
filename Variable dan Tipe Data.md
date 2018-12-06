@@ -127,3 +127,13 @@ Kotlin menyediakan cara untuk membuat array tipe primitif juga. Ini berisi kelas
 val myCharArray = charArrayOf('K', 'O', 'T')  // CharArray (corresponds to Java 'char[]')
 val myIntArray = intArrayOf(1, 3, 5, 7)		// IntArray (corresponds to Java 'int[]')
 ```
+
+## Membuat Array dengan Array Constructor
+Dengan membuat array dengan Arrray(), setidaknya akan memerlukan 2 Argument
+* mendefinisikan jumlah index yang akan diberikan.
+* mendefinisikan fungsi yang akan mengambil hasil dari element yang dimasukkan ke dalam elament array tersebut.
+akan lebih mudah dijelaskan pada contoh berikut : 
+```java
+var mySquareArray = Array(5, {i -> i * i})	// [0, 1, 4, 9, 16]
+```
+
