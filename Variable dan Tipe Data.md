@@ -11,10 +11,12 @@ negara = "INDONESIA" // works..
 ```
 
 ## Type Inference
-Bisa dikatan kelebihan atau kekurangan dari kotlin itu sendiri bahwa kotlin merupakan bahasa 'statcially type', namun kotlin juga dapat mengabaikan saat pendefinisian tipe data variable.
-
+Bisa dikatan kelebihan atau kekurangan dari kotlin itu sendiri bahwa kotlin merupakan bahasa 'statcially type', namun kotlin juga dapat mengabaikan saat pendefinisian tipe data variable, contoh seperti berikut : 
 ```kotlin
-var name = "arrizaqu";
-var age = 17;
+var name = "arrizaqu"; //as String
+var age = 17; //as Int
 println("name "+ name + ", age : "+ age);
 ```
+
+namun yang perlu diperhatikan adalah mandatory harus mendefinisikan tipe data jika tida inisialisasi data 
+
