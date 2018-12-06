@@ -63,3 +63,31 @@ val oneMillion = 1_000_000
 ```
 ### Boolean
 Seperti biasanya boolean akan merepresentasikan nilai logika, yaitu true dan false
+```kotlin
+val myBoolean = true;
+val anotherBoolean = false;
+```
+
+## Characters
+Sebagaimana dengan java, Character dipresentasikan dengan tipe data Char
+
+```kotlin
+val letterChar = 'A'
+val digitChar = '9'
+```
+
+## Strings
+String merepresentasikan String class, sama dengan java, string bersifat immutable.
+contoh: 
+```kotlin
+var name = "John"
+var firstCharInName = name[0]  // 'J'
+var lastCharInName = name[name.length - 1]  // 'n'
+```
+Dalam String kita juga dapat membuat string sebagai raw String, yaitu contoh multiple lines 
+```kotlin
+var myCountry = """
+  jakarta merupakan ibukota indonesia 
+  yang terletak di antara benua asia dan australia
+"""
+```
