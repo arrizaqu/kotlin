@@ -143,6 +143,28 @@ Tidak seperti Java, Kotlin tidak mendukung konversi implisit dari tipe yang lebi
 var myInt = 100
 var myLong: Long = myInt // Compiler Error
 ```
+Namun, Setiap Tipe angka berisi fungsi helper yang dapat digunakan untuk secara eksplisit mengonversi satu jenis ke jenis lainnya.
+diantaranya : 
+* toByte()
+* toShort()
+* toInt()
+* toLong()
+* toFLoat()
+* toDouble()
+* toChar()
 
+```kotlin
+ val myInt = 100
+val myLong = myInt.toLong()   // Explicitly converting 'Int' to 'Long'
+
+val myInt = 1000
+myInt.toString()  // "1000"
+
+val str = "1000"
+val intValue = str.toInt()
+
+val str = "1000ABC"
+str.toInt()   // Throws java.lang.NumberFormatException
+```
 
 
