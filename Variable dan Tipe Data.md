@@ -137,3 +137,12 @@ akan lebih mudah dijelaskan pada contoh berikut :
 var mySquareArray = Array(5, {i -> i * i})	// [0, 1, 4, 9, 16]
 ```
 
+## Konversi Tipe Data
+Tidak seperti Java, Kotlin tidak mendukung konversi implisit dari tipe yang lebih kecil ke tipe yang lebih besar. Misalnya, Int tidak dapat ditetapkan ke Long atau Double. contoh, sebagaimana berikut : 
+```kotlin
+var myInt = 100
+var myLong: Long = myInt // Compiler Error
+```
+
+
+
