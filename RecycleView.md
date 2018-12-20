@@ -8,6 +8,7 @@
     * ui recycleview
     * ui recycleview detail
 * RecycleView Devider
+* Searching and Sorting
 
 ## create simple Data List
 ### Model
@@ -147,3 +148,5 @@ class Employee(val _id : Int, val _firstName : String, val _lastName : String, v
 ```kotlin
 recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, DividerItemDecoration.VERTICAL))
 ```
+
+## Searching and Sorting
