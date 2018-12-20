@@ -1,5 +1,4 @@
 # Kotlin Activity
-* Intent
 * RecycleView
 
 ## Hello World TextView
