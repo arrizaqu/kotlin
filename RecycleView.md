@@ -143,7 +143,7 @@ class Employee(val _id : Int, val _firstName : String, val _lastName : String, v
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
 </android.support.constraint.ConstraintLayout>
 ```
-### RecycleView Devider
+## RecycleView Devider
 ```kotlin
 recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, DividerItemDecoration.VERTICAL))
 ```
