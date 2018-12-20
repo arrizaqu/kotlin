@@ -1,4 +1,6 @@
 # Kotlin Activity
+* Intent
+* RecycleView
 
 ## Hello World TextView
 ```kotlin
@@ -13,4 +15,10 @@ class MainActivity : AppCompatActivity(){
         setContentView(this.textView)
     }
 }
+```
+
+## Intent
+```kotlin
+var intent : Intent = Intent(this, EmployeeActivity::class.java)
+this.startActivity(intent)
 ```
