@@ -2,7 +2,12 @@
 # RecycleView
 * create simple Data List
     * datasource
-    * entity model
+    * entity
+    * main activity
+    * entity adapter
+    * ui recycleview
+    * ui recycleview detail
+* RecycleView Devider
 
 ## create simple Data List
 ### Model
