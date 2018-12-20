@@ -1,9 +1,10 @@
 
 # RecycleView
 * create simple Data List
+    * datasource
+    * entity model
 
 ## create simple Data List
-
 ### Model
 ```kotlin
 public fun getAllEmployees() : List<Employee>{
