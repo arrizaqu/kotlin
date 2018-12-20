@@ -6,6 +6,23 @@
 
 ### Model
 ```kotlin
+public fun getAllEmployees() : List<Employee>{
+
+    var listEmployees : MutableList<Employee> = ArrayList<Employee>()
+    var emp1 : Employee = Employee(12, "masyda", "arrizaqu", "arrizaqu@yahoo.com", "1")
+    var emp2 : Employee = Employee(13, "masyda1", "arrizaqu1", "arrizaqu1@yahoo.com", "2")
+    var emp3 : Employee = Employee(14, "masyda2", "arrizaqu2", "arrizaqu2@yahoo.com", "3")
+    var emp4 : Employee = Employee(15, "masyda3", "arrizaqu3", "arrizaqu3@yahoo.com", "4")
+    var emp5 : Employee = Employee(16, "masyda4", "arrizaqu4", "arrizaqu4@yahoo.com", "5")
+
+    listEmployees.add(emp1)
+    listEmployees.add(emp2)
+    listEmployees.add(emp3)
+    listEmployees.add(emp4)
+    listEmployees.add(emp5)
+
+    return listEmployees;
+}
 ```
 ### MainActivity
 ```kotlin
