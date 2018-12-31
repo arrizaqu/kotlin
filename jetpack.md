@@ -1,12 +1,13 @@
 
 # Jetpack
-* Lifecycle-aware Components
-  * LifecycleOwner
-  * LifecycleObserver
-  
-## LifecycleOwner
+## Android Architecture Components   
+ * DataBinding
+ * Navigation
+ * LiveData
+ * Paging
+ * Room
+ * ViewModel
+ * WorkManager
  
-## LifecycleObserver
-
 ## Reference
 * https://android.jlelse.eu/jet-set-pack-go-guide-to-using-android-jetpack-378cf248be00
