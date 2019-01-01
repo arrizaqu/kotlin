@@ -94,6 +94,8 @@ var result5: MyType = {
 	name, age ->
 		println("hello myname is ${name}, i am ${age} years old")
 }
+```
+
 ## Passing by Lambda
 
 ## Example : 
