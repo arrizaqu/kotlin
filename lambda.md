@@ -75,6 +75,11 @@ var result3: (String, Int) -> String = {
 	name, age->
 		"hello ${name}, i am ${age} years old"
 }
+
+var result7: String.(Int) -> Unit = {
+	i ->
+		println("haloo ${this}, i am ${i}")
+}
 ```
 
 ## Lambda and Input Variable
@@ -97,6 +102,16 @@ var result5: MyType = {
 ```
 
 ## Passing by Lambda
+```kotlin
+typealias MyType2 = (name: String, age: Int) -> () -> String
+
+var result6: MyType2 = {
+	name, age ->
+	{
+		"hello my name is ${name}, i am ${age}"
+	}
+}
+```
 
 ## Example : 
 ```kotlin
