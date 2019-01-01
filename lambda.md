@@ -9,8 +9,31 @@
 * Passing by Lambda
 
 ## Basic 
+```kotlin
+val basic = {
+	println("hello lambda");
+}
+val basic2 = {
+	5
+}
+```
+
 ## Parameter
+```kotlin
+val param = {
+	name: String ->
+		println("hello my name is ${name}")
+}
+```
+
 ## Multiple Parameter
+```kotlin
+var multiParam = {
+	name: String, age: Int ->
+		println("hello my name is ${name}, i am ${age} years old")
+}
+```
+
 ## Sorting dan Filter List Data
 ## Lambda and Condition
 ## Lambda with DataType
