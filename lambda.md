@@ -5,6 +5,7 @@
 * Sorting dan Filter List Data
 * Lambda and Condition
 * Lambda with DataType
+* Lambda and Input Variable
 * AliasType
 * Passing by Lambda
 
@@ -61,7 +62,38 @@ val result = {
 ```
 
 ## Lambda with DataType
+```kotlin
+var result1: () -> Unit = {
+	println("lambda with unit type")
+}
+
+var result2: () -> Int = {
+	5
+}
+
+var result3: (String, Int) -> String = {
+	name, age->
+		"hello ${name}, i am ${age} years old"
+}
+```
+
+## Lambda and Input Variable
+```kotlin
+// lambda and variable
+var result4: (name: String) -> String = {
+	"hello my name is ${it}"
+}
+```
+
 ## AliasType
+```kotlin
+typealias MyType = (name: String, age: Int)-> Unit
+
+// AliasType
+var result5: MyType = {
+	name, age ->
+		println("hello myname is ${name}, i am ${age} years old")
+}
 ## Passing by Lambda
 
 ## Example : 
