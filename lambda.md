@@ -35,7 +35,31 @@ var multiParam = {
 ```
 
 ## Sorting dan Filter List Data
+```kotlin
+var datalist = mutableListOf<String>("jakarta", "bandung", "palembang", "bali", "ambon")
+datalist.sortBy { name -> name.length }
+//    for(city in datalist){
+//        println(city)
+//    }
+
+val dataResult = datalist
+		.filter { name: String -> name.startsWith("ba", ignoreCase = true) }
+		.sortedBy { name: String -> name.length }
+		.firstOrNull()
+println(dataResult)
+```
+
 ## Lambda and Condition
+```kotlin
+val result = {
+	a: Int, b: Int ->
+		if(a > b)
+			a
+	else
+			b
+}
+```
+
 ## Lambda with DataType
 ## AliasType
 ## Passing by Lambda
