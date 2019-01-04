@@ -4,7 +4,7 @@
 
 ## Installation 
 ### dependencies - Build.gradle (Model app)
-```json
+```gradle
 dependencies {
     def lifecycle_version = "1.1.1"
 
@@ -32,7 +32,7 @@ dependencies {
 ```
 
 ## Issue
-```json
+```gradle
 android {
 ...
   compileOptions {
