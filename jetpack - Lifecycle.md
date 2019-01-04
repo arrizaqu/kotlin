@@ -1,6 +1,8 @@
 # jetpack - LifeCycleEvent
 * Installation
 * Issue 
+* ActivityOwner
+* ActiivtyObserver
 
 ## Installation 
 ### dependencies - Build.gradle (Model app)
@@ -30,7 +32,92 @@ dependencies {
 	...
 
 ```
+## ActivityOwner
+```kotlin
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.util.Log
 
+class MainActivity : AppCompatActivity() {
+
+    val Tag: String = this.javaClass.simpleName
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        Log.d(Tag, "Owner onCreate")
+        this.lifecycle.addObserver(MainActivityObserver())
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(Tag, "Owner onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(Tag, "Owner onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(Tag, "Owner onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(Tag, "Owner onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(Tag, "Owner onDestroy")
+    }
+}
+```
+
+## ActivityObserver
+```kotlin
+import android.arch.lifecycle.Lifecycle
+import android.arch.lifecycle.LifecycleObserver
+import android.arch.lifecycle.OnLifecycleEvent
+import android.util.Log
+
+class MainActivityObserver : LifecycleObserver{
+
+    val Tag: String = this.javaClass.simpleName
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+    public fun onCreateEvent(){
+        Log.d(Tag, "Observer onCreate")
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    public fun onStartEvent(){
+        Log.d(Tag, "Observer onStart")
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+    public fun onResumeEvent(){
+        Log.d(Tag, "Observer onResume")
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+    public fun onPauseEvent(){
+        Log.d(Tag, "Observer onPause")
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+    public fun onStopEvent(){
+        Log.d(Tag, "Observer onStop")
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+    public fun onDestroyEvent(){
+        Log.d(Tag, "Observer onDestroy")
+    }
+
+}
+```
 ## Issue
 ```gradle
 android {
