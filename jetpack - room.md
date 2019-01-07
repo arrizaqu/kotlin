@@ -5,9 +5,10 @@
 	* Create Dao
 	* Create LiveData Class
 	* Databaase Configuration Class
-
 * example execute query
-	
+* Relationship
+* Custome Type
+* Migration	
 
 * Reference
 
@@ -99,3 +100,5 @@ class MyAsync: AsyncTask<Context, Unit, Unit>(){
 
 ## Reference
 * https://medium.com/androiddevelopers/7-pro-tips-for-room-fbadea4bfbd1
+* https://codelabs.developers.google.com/codelabs/android-room-with-a-view/?hl=id#2
+* https://android.jlelse.eu/android-architecture-components-room-introduction-4774dd72a1ae
