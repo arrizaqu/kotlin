@@ -6,6 +6,9 @@
 	* Create LiveData Class
 	* Databaase Configuration Class
 
+* example execute query
+	
+
 * Reference
 
 ## Dependency
@@ -50,7 +53,7 @@ interface UserDao {
 }
 ```
 
-### Databaase Configuration Class
+### Database Configuration Class
 ```kotlin
 @Database(entities = arrayOf(UserApp::class), version = 1, exportSchema = false)
 public abstract class AppDatabase: RoomDatabase() {
@@ -77,6 +80,21 @@ public abstract class AppDatabase: RoomDatabase() {
         }
     }
 }
+```
+
+## example execute query
+```kotlin
+class MyAsync: AsyncTask<Context, Unit, Unit>(){
+	override fun doInBackground(vararg params: Context?) {
+		val app = AppDatabase
+		val db: AppDatabase = app.getInstance(params[0] as Context)!!
+		var myuser = UserApp()
+		myuser.firstName = "arrizaqu@yahoo.com"
+		myuser.lastName = "masyda";
+		db.userDao().save(myuser)
+	}
+}
+
 ```
 
 ## Reference
